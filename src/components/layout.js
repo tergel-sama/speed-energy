@@ -6,7 +6,7 @@ export default function Layout({ children }) {
       bgColor="#111111"
       px="120px"
       h="100vh"
-      margin="unset"
+      margin="auto"
       maxW="1920px"
     >
       {children}

@@ -3,6 +3,8 @@ import Header from "../components/header";
 import CustomSilder from "../components/customslide";
 import AboutUs from "../components/aboutus";
 import SpecialProd from "../components/specialprod";
+import Partners from "../components/partners";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -13,6 +15,10 @@ export default function Home() {
         <AboutUs />
       </Layout>
       <SpecialProd />
+      <Layout>
+        <Partners />
+      </Layout>
+      <Footer />
     </>
   );
 }

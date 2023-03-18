@@ -3,6 +3,7 @@ import {
   Flex,
   Heading,
   Image,
+  Box,
   Stack,
   Text,
   useBreakpointValue,
@@ -28,15 +29,15 @@ $(document).ready(function () {
 
 export default function SpecialProd() {
   return (
-    <>
-      <body>
+    <Box className="h-screen" fontFamily="Oswald">
+      <div className="mt-[200px]">
         <div class="flex h-screen relative overflow-hidden">
           <div id="leftPane" class="w-1/2 bg-[#111111] text-white  relative">
             <div
               id="leftPaneButton"
               class="absolute flex items-center h-screen right-0 w-48"
             >
-              <div class="w-full h-48  flex items-center cursor-pointer transition duration-500 hover:bg-gray-300 bg-white text-black justify-center">
+              <div class="w-full h-48 text-[25px] flex items-center cursor-pointer transition duration-500 hover:bg-gray-300 bg-white text-[#111111] justify-center">
                 АЯНЫ ЧИРГҮҮЛ
               </div>
             </div>
@@ -73,10 +74,7 @@ export default function SpecialProd() {
                         KOVE
                       </Text>
                     </Heading>
-                    <Text
-                      fontSize={{ base: "md", lg: "lg" }}
-                      color={"gray.500"}
-                    >
+                    <Text fontSize={{ base: "25px" }} color={"gray.500"}>
                       Албан ёсны эрхтэйгээр манайд худалдаалж байна.
                     </Text>
                   </Stack>
@@ -92,12 +90,15 @@ export default function SpecialProd() {
               </Stack>
             </div>
           </div>
-          <div id="rightPane" class=" w-1/2 bg-[#ffffff] text-black  relative ">
+          <div
+            id="rightPane"
+            class=" w-1/2 bg-[#ffffff] text-[#111111]  relative "
+          >
             <div
               id="rightPaneButton"
               class="absolute flex items-center h-screen left-0 w-48"
             >
-              <div class="w-full h-48   cursor-pointer transition duration-500 hover:bg-gray-700 bg-black text-white flex justify-center items-center">
+              <div class="w-full h-48 text-[25px] cursor-pointer transition duration-500 hover:bg-gray-700 bg-[#111111] text-white flex justify-center items-center">
                 МОТОЦИКЛ
               </div>
             </div>
@@ -142,10 +143,7 @@ export default function SpecialProd() {
                         CONQUER FALCON
                       </Text>
                     </Heading>
-                    <Text
-                      fontSize={{ base: "md", lg: "lg" }}
-                      color={"gray.500"}
-                    >
+                    <Text fontSize={{ base: "25px" }} color={"gray.500"}>
                       Албан ёсны эрхтэйгээр манайд худалдаалж байна.
                     </Text>
                   </Stack>
@@ -154,7 +152,7 @@ export default function SpecialProd() {
             </div>
           </div>
         </div>
-      </body>
-    </>
+      </div>
+    </Box>
   );
 }

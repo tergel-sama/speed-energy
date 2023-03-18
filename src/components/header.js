@@ -25,7 +25,7 @@ export default function Header() {
     <>
       <Flex
         px="120px"
-        bg="#d82424"
+        bg="#111111"
         minWidth="max-content"
         alignItems="center"
         gap="2"
@@ -33,7 +33,7 @@ export default function Header() {
         <Box my="12px" p="2">
           <Heading size="md">
             <Flex onClick={onOpen} cursor="pointer">
-              <BiMenuAltRight size="45px" />
+              <BiMenuAltRight color="#d82424" size="45px" />
               <Text fontSize="34px" color="#ffffff" fontFamily="Oswald">
                 АНГИЛАЛ
               </Text>

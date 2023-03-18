@@ -12,7 +12,7 @@ import Partner9 from "../assets/partners/9.png";
 
 export default function Partners() {
   return (
-    <Box mt="175px">
+    <Box my="175px">
       <Flex justifyContent="center">
         <Flex alignItems="center">
           <Box marginRight="30px" w="7px" h="75px" bg="#d82424" />

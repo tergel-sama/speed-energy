@@ -6,7 +6,12 @@ import mongolia from "../assets/img/mongolia.png";
 export default function Lang() {
   return (
     <Layout>
-      <Flex justifyContent="center" alignItems="center" w="100%" height="100%">
+      <Flex
+        className="h-screen"
+        justifyContent="center"
+        alignItems="center"
+        w="100%"
+      >
         <Flex direction="column">
           <Flex className="group" py="5px">
             <Text

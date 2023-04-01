@@ -1,13 +1,29 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import { EffectCreative } from "swiper";
+import { AiOutlineDoubleRight } from "react-icons/ai";
+import anime from "animejs/lib/anime.es.js";
 
-import Slider1car from "../assets/img/slider1car.png";
+import hoyrzuu from "../assets/img/hoyrzuu.png";
+import jeep from "../assets/img/jeep.png";
+import patrol from "../assets/img/patrol.png";
 
 import "swiper/css";
 import "swiper/css/effect-creative";
+import { useEffect } from "react";
 
 export default function App() {
+  useEffect(() => {
+    anime({
+      targets: "#leftcarrow",
+      translateX: 50,
+      duration: 1350,
+      direction: "alternate",
+      easing: "easeInOutSine",
+      loop: true,
+    });
+  }, []);
+
   return (
     <>
       <Swiper
@@ -25,26 +41,45 @@ export default function App() {
         modules={[EffectCreative]}
       >
         <SwiperSlide>
-          <Box bg="#111111" height="900px" w="1920px">
-            <Flex>
-              <Flex>
-                <Image src={Slider1car} />
+          <Box bg="#111111" h="100vh" w="1920px">
+            <Flex alignItems="center">
+              <Flex
+                py="150px"
+                marginLeft="185px"
+                alignItems="center"
+                justifyContent="center"
+                flexBasis="50%"
+              >
+                <Image src={hoyrzuu} />
               </Flex>
               <Flex
                 marginRight="185px"
                 justifyContent="center"
                 alignItems="center"
                 direction="column"
+                flexBasis="50%"
               >
-                <Text
-                  fontSize="90px"
-                  color="#ffffff"
-                  letterSpacing="2.45px"
-                  fontWeight={900}
-                  fontStyle="italic"
-                >
-                  OFFROAD
-                </Text>
+                <Flex alignItems="center">
+                  <Text
+                    fontSize="90px"
+                    color="#ffffff"
+                    letterSpacing="2.45px"
+                    fontWeight={900}
+                    fontStyle="italic"
+                  >
+                    OFFROAD
+                  </Text>
+                  <Text
+                    ml="30px"
+                    fontSize="90px"
+                    color="#ffffff"
+                    letterSpacing="2.45px"
+                    fontWeight={900}
+                    fontStyle="italic"
+                  >
+                    <AiOutlineDoubleRight id="leftcarrow" />
+                  </Text>
+                </Flex>
                 <Box
                   w="450px"
                   h="10px"
@@ -55,26 +90,45 @@ export default function App() {
           </Box>
         </SwiperSlide>
         <SwiperSlide>
-          <Box bg="#111111" height="900px" w="1920px">
-            <Flex>
-              <Flex>
-                <Image src={Slider1car} />
+          <Box bg="#111111" h="100vh" w="1920px">
+            <Flex alignItems="center">
+              <Flex
+                py="150px"
+                marginLeft="185px"
+                alignItems="center"
+                justifyContent="center"
+                flexBasis="50%"
+              >
+                <Image src={patrol} />
               </Flex>
               <Flex
                 marginRight="185px"
                 justifyContent="center"
                 alignItems="center"
                 direction="column"
+                flexBasis="50%"
               >
-                <Text
-                  fontSize="90px"
-                  color="#ffffff"
-                  letterSpacing="2.45px"
-                  fontWeight={900}
-                  fontStyle="italic"
-                >
-                  МОТОЦИКЛ
-                </Text>
+                <Flex alignItems="center">
+                  <Text
+                    fontSize="90px"
+                    color="#ffffff"
+                    letterSpacing="2.45px"
+                    fontWeight={900}
+                    fontStyle="italic"
+                  >
+                    OFFROAD
+                  </Text>
+                  <Text
+                    ml="30px"
+                    fontSize="90px"
+                    color="#ffffff"
+                    letterSpacing="2.45px"
+                    fontWeight={900}
+                    fontStyle="italic"
+                  >
+                    <AiOutlineDoubleRight id="leftcarrow" />
+                  </Text>
+                </Flex>
                 <Box
                   w="450px"
                   h="10px"
@@ -85,26 +139,35 @@ export default function App() {
           </Box>
         </SwiperSlide>
         <SwiperSlide>
-          <Box bg="#111111" height="900px" w="1920px">
-            <Flex>
-              <Flex>
-                <Image src={Slider1car} />
+          <Box bg="#111111" h="100vh" w="1920px">
+            <Flex alignItems="center">
+              <Flex
+                py="150px"
+                marginLeft="185px"
+                alignItems="center"
+                justifyContent="center"
+                flexBasis="50%"
+              >
+                <Image src={jeep} />
               </Flex>
               <Flex
                 marginRight="185px"
                 justifyContent="center"
                 alignItems="center"
                 direction="column"
+                flexBasis="50%"
               >
-                <Text
-                  fontSize="90px"
-                  color="#ffffff"
-                  letterSpacing="2.45px"
-                  fontWeight={900}
-                  fontStyle="italic"
-                >
-                  АЯНЫ ЧИРГҮҮЛ
-                </Text>
+                <Flex alignItems="center">
+                  <Text
+                    fontSize="90px"
+                    color="#ffffff"
+                    letterSpacing="2.45px"
+                    fontWeight={900}
+                    fontStyle="italic"
+                  >
+                    OFFROAD
+                  </Text>
+                </Flex>
                 <Box
                   w="450px"
                   h="10px"

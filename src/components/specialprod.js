@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 import Moto from "../assets/img/moto.png";
+import conqfalc from "../assets/img/conquerfalcon.png";
 
 $(document).ready(function () {
   $("#leftPaneButton").click(function () {
@@ -30,7 +31,7 @@ $(document).ready(function () {
 export default function SpecialProd() {
   return (
     <Box className="h-screen" fontFamily="Oswald">
-      <div className="mt-[200px]">
+      <div className="mt-[100px]">
         <div class="flex h-screen relative overflow-hidden">
           <div id="leftPane" class="w-1/2 bg-[#111111] text-white  relative">
             <div
@@ -85,7 +86,7 @@ export default function SpecialProd() {
                   paddingRight="120px"
                   flex={1}
                 >
-                  <Image alt={"Login Image"} objectFit={"cover"} src={Moto} />
+                  <Image alt={"kove"} objectFit={"cover"} src={Moto} />
                 </Flex>
               </Stack>
             </div>
@@ -111,10 +112,10 @@ export default function SpecialProd() {
                 <Flex
                   id="image2"
                   visibility="collapse"
-                  paddingLeft="120px"
+                  paddingLeft="320px"
                   flex={1}
                 >
-                  <Image alt={"Login Image"} objectFit={"cover"} src={Moto} />
+                  <Image alt={"falc"} w="400px" src={conqfalc} />
                 </Flex>
                 <Flex flex={1} justify="right" align={"center"}>
                   <Stack textAlign="right" spacing={6} w={"full"} maxW={"lg"}>

@@ -1,3 +1,5 @@
+import { Flex, Box, Text } from "@chakra-ui/react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import CustomSilder from "../components/customslide";
@@ -14,6 +16,22 @@ export default function Home() {
       <Layout>
         <AboutUs />
       </Layout>
+      <Flex pt="200px" justifyContent="center" w="100%">
+        <Flex alignItems="center">
+          <Box marginRight="30px" w="7px" h="75px" bg="#d82424" />
+          <AnimationOnScroll animateIn="animate__fadeInDown">
+            <Text
+              letterSpacing="1.58px"
+              fontWeight="bold"
+              fontSize="60px"
+              color="#ffffff"
+              fontFamily="Oswald"
+            >
+              ОНЦЛОХ БҮТЭЭГДЭХҮҮН
+            </Text>
+          </AnimationOnScroll>
+        </Flex>
+      </Flex>
       <SpecialProd />
       <Layout>
         <Partners />

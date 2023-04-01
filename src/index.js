@@ -9,6 +9,7 @@ import "animate.css/animate.min.css";
 //pages
 import Lang from "./pages/lang";
 import Home from "./pages/home";
+import Products from "./pages/products";
 
 //global styles
 import "./global.css";
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/prod",
+    element: <Products />,
   },
 ]);
 

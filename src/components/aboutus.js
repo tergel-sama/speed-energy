@@ -5,15 +5,20 @@ import AboutUsImg from "../assets/img/aboutus.jpg";
 export default function AboutUs() {
   return (
     <>
-      <Flex>
+      <Flex direction={{ base: "column", md: "row" }}>
         <Flex flexBasis="50%" direction="column">
           <Flex alignItems="center">
-            <Box marginRight="30px" w="7px" h="75px" bg="#d82424" />
+            <Box
+              marginRight="30px"
+              w={{ base: "4px", md: "7px" }}
+              h={{ base: "45px", md: "75px" }}
+              bg="#d82424"
+            />
             <AnimationOnScroll animateIn="animate__fadeInDown">
               <Text
                 letterSpacing="1.58px"
                 fontWeight="bold"
-                fontSize="60px"
+                fontSize={{ base: "35px", md: "60px" }}
                 color="#ffffff"
                 fontFamily="Oswald"
               >
@@ -23,13 +28,14 @@ export default function AboutUs() {
           </Flex>
           <AnimationOnScroll delay={500} animateIn="animate__fadeInLeft">
             <Text
-              marginTop="100px"
+              marginTop={{ base: "40px", md: "100px" }}
               color="#ffffff"
-              fontSize="25px"
+              fontSize={{ base: "15px", md: "25px" }}
               fontFamily="Oswald"
               lineHeight="2"
               letterSpacing="0.63px"
-              pr="50px"
+              pr={{ md: "50px" }}
+              pb={{ base: "30px" }}
             >
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

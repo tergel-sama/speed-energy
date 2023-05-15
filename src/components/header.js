@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <>
       <Flex
-        px="120px"
+        px={{ base: "5px", md: "120px" }}
         bg="#111111"
         minWidth="max-content"
         alignItems="center"
@@ -41,7 +41,11 @@ export default function Header() {
           </Heading>
         </Box>
         <Spacer />
-        <Image width="350px" src={Logowhitelongtext} />
+        <Image
+          display={{ base: "none", md: "block" }}
+          width="350px"
+          src={Logowhitelongtext}
+        />
         <Spacer />
         <Flex>
           <Image
@@ -52,7 +56,12 @@ export default function Header() {
             border="solid 1px #fff"
             src={english}
           />
-          <Box mx="17px" bg="#111" width="3px" height="34px" />
+          <Box
+            mx={{ base: "5px", md: "17px" }}
+            bg="#111"
+            width="3px"
+            height="34px"
+          />
           <Image
             width="56px"
             height="27px"
@@ -63,28 +72,36 @@ export default function Header() {
           />
         </Flex>
       </Flex>
-      <Drawer size="lg" placement="left" onClose={onClose} isOpen={isOpen}>
+      <Drawer
+        size={{ base: "sm", md: "lg" }}
+        placement="left"
+        onClose={onClose}
+        isOpen={isOpen}
+      >
         <DrawerOverlay />
         <DrawerContent bgColor="#d82424">
           <DrawerHeader>
             <Flex height="125px" justifyContent="center" alignItems="center">
-              <Image width="350px" src={Logowhitelongtext} />
+              <Image
+                width={{ base: "250px", md: "350px" }}
+                src={Logowhitelongtext}
+              />
             </Flex>
           </DrawerHeader>
           <DrawerBody>
             <Flex marginBottom="15px" className="group">
               <Box
-                marginTop="30px"
+                marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
-                marginRight="40px"
-                marginLeft="50px"
-                width="65px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
                 height="4px"
                 backgroundColor="#2a2a2a"
                 className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
               />
               <Text
-                fontSize="40px"
+                fontSize={{ base: "25px", md: "40px" }}
                 lineHeight="normal"
                 fontWeight="bold"
                 color="#2a2a2a"
@@ -96,17 +113,17 @@ export default function Header() {
             </Flex>
             <Flex marginBottom="15px" className="group">
               <Box
-                marginTop="30px"
+                marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
-                marginRight="40px"
-                marginLeft="50px"
-                width="65px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
                 height="4px"
                 backgroundColor="#2a2a2a"
                 className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
               />
               <Text
-                fontSize="40px"
+                fontSize={{ base: "25px", md: "40px" }}
                 lineHeight="normal"
                 fontWeight="bold"
                 color="#2a2a2a"
@@ -118,17 +135,17 @@ export default function Header() {
             </Flex>
             <Flex marginBottom="15px" className="group">
               <Box
-                marginTop="30px"
+                marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
-                marginRight="40px"
-                marginLeft="50px"
-                width="65px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
                 height="4px"
                 backgroundColor="#2a2a2a"
                 className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
               />
               <Text
-                fontSize="40px"
+                fontSize={{ base: "25px", md: "40px" }}
                 lineHeight="normal"
                 fontWeight="bold"
                 color="#2a2a2a"
@@ -140,17 +157,17 @@ export default function Header() {
             </Flex>
             <Flex marginBottom="15px" className="group">
               <Box
-                marginTop="30px"
+                marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
-                marginRight="40px"
-                marginLeft="50px"
-                width="65px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
                 height="4px"
                 backgroundColor="#2a2a2a"
                 className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
               />
               <Text
-                fontSize="40px"
+                fontSize={{ base: "25px", md: "40px" }}
                 lineHeight="normal"
                 fontWeight="bold"
                 color="#2a2a2a"
@@ -162,17 +179,17 @@ export default function Header() {
             </Flex>
             <Flex marginBottom="15px" className="group">
               <Box
-                marginTop="30px"
+                marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
-                marginRight="40px"
-                marginLeft="50px"
-                width="65px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
                 height="4px"
                 backgroundColor="#2a2a2a"
                 className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
               />
               <Text
-                fontSize="40px"
+                fontSize={{ base: "25px", md: "40px" }}
                 lineHeight="normal"
                 fontWeight="bold"
                 color="#2a2a2a"
@@ -184,17 +201,17 @@ export default function Header() {
             </Flex>
             <Flex marginBottom="15px" className="group">
               <Box
-                marginTop="30px"
+                marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
-                marginRight="40px"
-                marginLeft="50px"
-                width="65px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
                 height="4px"
                 backgroundColor="#2a2a2a"
                 className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
               />
               <Text
-                fontSize="40px"
+                fontSize={{ base: "25px", md: "40px" }}
                 lineHeight="normal"
                 fontWeight="bold"
                 color="#2a2a2a"
@@ -206,17 +223,17 @@ export default function Header() {
             </Flex>
             <Flex marginBottom="15px" className="group">
               <Box
-                marginTop="30px"
+                marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
-                marginRight="40px"
-                marginLeft="50px"
-                width="65px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
                 height="4px"
                 backgroundColor="#2a2a2a"
                 className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
               />
               <Text
-                fontSize="40px"
+                fontSize={{ base: "25px", md: "40px" }}
                 lineHeight="normal"
                 fontWeight="bold"
                 color="#2a2a2a"
@@ -228,17 +245,17 @@ export default function Header() {
             </Flex>
             <Flex marginBottom="15px" className="group">
               <Box
-                marginTop="30px"
+                marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
-                marginRight="40px"
-                marginLeft="50px"
-                width="65px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
                 height="4px"
                 backgroundColor="#2a2a2a"
                 className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
               />
               <Text
-                fontSize="40px"
+                fontSize={{ base: "25px", md: "40px" }}
                 lineHeight="normal"
                 fontWeight="bold"
                 color="#2a2a2a"

@@ -41,11 +41,15 @@ export default function App() {
         modules={[EffectCreative]}
       >
         <SwiperSlide>
-          <Box bg="#111111" h="100vh" w="1920px">
-            <Flex alignItems="center">
+          <Box bg="#111111" h={{ base: "unset", md: "100vh" }} w="100%">
+            <Flex
+              direction={{ base: "column-reverse", md: "row" }}
+              px="20px"
+              alignItems="center"
+            >
               <Flex
-                py="150px"
-                marginLeft="185px"
+                py={{ base: "80px", md: "150px" }}
+                marginRight={{ base: "15px", md: "185px" }}
                 alignItems="center"
                 justifyContent="center"
                 flexBasis="50%"
@@ -53,7 +57,7 @@ export default function App() {
                 <Image src={hoyrzuu} />
               </Flex>
               <Flex
-                marginRight="185px"
+                marginRight={{ base: "15px", md: "185px" }}
                 justifyContent="center"
                 alignItems="center"
                 direction="column"
@@ -61,7 +65,7 @@ export default function App() {
               >
                 <Flex alignItems="center">
                   <Text
-                    fontSize="90px"
+                    fontSize={{ base: "50px", md: "90px" }}
                     color="#ffffff"
                     letterSpacing="2.45px"
                     fontWeight={900}
@@ -70,8 +74,8 @@ export default function App() {
                     OFFROAD
                   </Text>
                   <Text
-                    ml="30px"
-                    fontSize="90px"
+                    ml={{ base: "10px", md: "30px" }}
+                    fontSize={{ base: "30px", md: "90px" }}
                     color="#ffffff"
                     letterSpacing="2.45px"
                     fontWeight={900}
@@ -81,15 +85,15 @@ export default function App() {
                   </Text>
                 </Flex>
                 <Box
-                  w="450px"
-                  h="10px"
+                  w={{ base: "200px", md: "450px" }}
+                  h={{ base: "5px", md: "10px" }}
                   backgroundImage="linear-gradient(to right, #d82424 19%, rgba(255, 255, 255, 0) 83%)"
                 />
               </Flex>
             </Flex>
           </Box>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Box bg="#111111" h="100vh" w="1920px">
             <Flex alignItems="center">
               <Flex
@@ -176,7 +180,7 @@ export default function App() {
               </Flex>
             </Flex>
           </Box>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

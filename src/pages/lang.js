@@ -1,9 +1,11 @@
 import { Text, Flex, Image, Box } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import english from "../assets/img/english.png";
 import mongolia from "../assets/img/mongolia.png";
 import langhome from "../assets/img/langhome.png";
 
 export default function Lang() {
+  const navigate = useNavigate();
   return (
     <Flex
       bgImage={langhome}
@@ -16,7 +18,12 @@ export default function Lang() {
       w="100%"
     >
       <Flex direction="column">
-        <Flex cursor="pointer" className="group" py="5px">
+        <Flex
+          onClick={() => navigate("/home")}
+          cursor="pointer"
+          className="group"
+          py="5px"
+        >
           <Text
             fontWeight={600}
             pr="33px"
@@ -33,7 +40,12 @@ export default function Lang() {
           />
         </Flex>
         <Box my="10px" width="240px" border="1px solid #d82424" />
-        <Flex cursor="pointer" className="group" py="5px">
+        <Flex
+          onClick={() => navigate("/home")}
+          cursor="pointer"
+          className="group"
+          py="5px"
+        >
           <Text
             fontWeight={600}
             pr="40px"

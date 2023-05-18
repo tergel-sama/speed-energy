@@ -13,26 +13,27 @@ import {
 
 import moto from "../assets/img/moto.png";
 
-export default function ProdTabInfo() {
+export default function ProdTabInfo({ data }) {
   return (
     <>
       <Flex
+        overflow="scroll"
         className="transition ease-in-out  hover:scale-105 duration-500"
         my="50px"
         rounded="md"
-        p="50px"
+        p={{ base: "10px", md: "50px" }}
         bg="black"
       >
-        <Flex mx="30px" flexBasis="30%">
+        <Flex mx="20px" flexBasis="30%">
           <Flex justifyContent="left" direction="column">
             <Text
               textAlign="left"
               color="#ffffff"
               fontFamily="Oswald"
-              fontSize="46px"
+              fontSize={{ base: "30px", md: "46px" }}
               fontWeight={900}
             >
-              MX250 0FFROAD
+              {data?.ItemTitle}
             </Text>
             <Box
               bg="linear-gradient(to right, #d82424 29%, rgba(255, 255, 255, 0) 83%)"
@@ -56,7 +57,7 @@ export default function ProdTabInfo() {
                 _selected={{ color: "#ffffff" }}
                 letterSpacing="1.25px"
                 fontWeight="bold"
-                fontSize="30px"
+                fontSize={{ base: "15px", md: "30px" }}
               >
                 Хэмжээ
               </Tab>
@@ -64,7 +65,7 @@ export default function ProdTabInfo() {
                 _selected={{ color: "#ffffff" }}
                 letterSpacing="1.25px"
                 fontWeight="bold"
-                fontSize="30px"
+                fontSize={{ base: "15px", md: "30px" }}
               >
                 Хөдөлгүүр
               </Tab>
@@ -72,7 +73,7 @@ export default function ProdTabInfo() {
                 _selected={{ color: "#ffffff" }}
                 letterSpacing="1.25px"
                 fontWeight="bold"
-                fontSize="30px"
+                fontSize={{ base: "15px", md: "30px" }}
               >
                 Явах эд анги
               </Tab>
@@ -80,12 +81,12 @@ export default function ProdTabInfo() {
                 _selected={{ color: "#ffffff" }}
                 letterSpacing="1.25px"
                 fontWeight="bold"
-                fontSize="30px"
+                fontSize={{ base: "15px", md: "30px" }}
               >
                 Тохиргоо
               </Tab>
             </TabList>
-            <Box h="1px" my="32px" bgColor="#d82424" />
+            <Box h="1px" my={{ base: "16px", md: "32px" }} bgColor="#d82424" />
             <TabPanels>
               <TabPanel>
                 <Flex my="11px" fontFamily="Oswald">
@@ -93,7 +94,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     Урт x Жин x Өндөр :
                   </Text>
@@ -102,7 +103,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     2168×805×1265mm
                   </Text>
@@ -112,7 +113,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     Тэнхлэг хоорондын зай :
                   </Text>
@@ -121,7 +122,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     1490mm
                   </Text>
@@ -131,7 +132,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     Суудлын өндөр :
                   </Text>
@@ -140,7 +141,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     960mm (Front)
                   </Text>
@@ -150,7 +151,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     Түлшний багтаамж :
                   </Text>
@@ -159,7 +160,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     6L
                   </Text>
@@ -169,7 +170,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     Нийт жин (Түлшний савгүй) :
                   </Text>
@@ -178,7 +179,7 @@ export default function ProdTabInfo() {
                     letterSpacing="0.75px"
                     fontWeight="normal"
                     color="#ffffff"
-                    fontSize="26px"
+                    fontSize={{ base: "13px", md: "26px" }}
                   >
                     98kg
                   </Text>

@@ -13,13 +13,16 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { BiMenuAltRight } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
-import english from "../assets/img/english.png";
-import mongolia from "../assets/img/mongolia.png";
+import english from "../assets/img/lineenglish.png";
+import mongolia from "../assets/img/linemongolia.png";
 import Logowhitelongtext from "../assets/img/logowhitetext.png";
 
 export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -53,7 +56,6 @@ export default function Header() {
             height="27px"
             className="transition group-hover:skew-y-6 duration-300"
             alt="mongolia"
-            border="solid 1px #fff"
             src={english}
           />
           <Box
@@ -67,7 +69,6 @@ export default function Header() {
             height="27px"
             className="transition group-hover:skew-y-6 duration-300"
             alt="mongolia"
-            border="solid 1px #fff"
             src={mongolia}
           />
         </Flex>
@@ -81,7 +82,13 @@ export default function Header() {
         <DrawerOverlay />
         <DrawerContent bgColor="#d82424">
           <DrawerHeader>
-            <Flex height="125px" justifyContent="center" alignItems="center">
+            <Flex
+              height="125px"
+              justifyContent="center"
+              alignItems="center"
+              cursor="pointer"
+              onClick={() => navigate("/home")}
+            >
               <Image
                 width={{ base: "250px", md: "350px" }}
                 src={Logowhitelongtext}
@@ -89,7 +96,12 @@ export default function Header() {
             </Flex>
           </DrawerHeader>
           <DrawerBody>
-            <Flex marginBottom="15px" className="group">
+            <Flex
+              cursor="pointer"
+              onClick={() => navigate("/home")}
+              marginBottom="15px"
+              className="group"
+            >
               <Box
                 marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"

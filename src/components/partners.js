@@ -37,6 +37,7 @@ export default function Partners() {
           </AnimationOnScroll>
         </Flex>
       </Flex>
+      <Box my="70px" />
       <Swiper
         slidesPerView={4}
         loop={true}
@@ -101,118 +102,6 @@ export default function Partners() {
           />
         </SwiperSlide>
       </Swiper>
-      {/* <Flex
-        flexWrap={"wrap"}
-        paddingTop="90px"
-        justifyContent="center"
-        alignItems="center"
-        gap={"20px"}
-      >
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner1}
-        />
-        <Spacer />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner2}
-        />
-        <Spacer />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner3}
-        />
-        <Spacer />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner4}
-        />
-        <Spacer />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner5}
-        />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner6}
-        />
-        <Spacer />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner7}
-        />
-        <Spacer />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner8}
-        />
-        <Spacer />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner9}
-        />
-        <Spacer />
-        <Image
-          margin={"20px"}
-          w={"300px"}
-          p={"20px"}
-          className="transition ease-in-out  hover:scale-105 duration-500"
-          src={Partner9}
-        />
-      </Flex> */}
-      <Flex justifyContent="center">
-        <AnimationOnScroll animateIn="animate__fadeInUp">
-          <Text
-            marginTop="100px"
-            color="#ffffff"
-            fontSize="25px"
-            fontFamily="Oswald"
-            lineHeight="2"
-            letterSpacing="0.63px"
-          >
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-          </Text>
-        </AnimationOnScroll>
-      </Flex>
     </Box>
   );
 }

@@ -4,6 +4,9 @@ import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import "swiper/css";
+import "swiper/css/pagination";
+
 import "animate.css/animate.min.css";
 
 //pages

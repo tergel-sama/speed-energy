@@ -6,6 +6,7 @@ import langhome from "../assets/img/langhome.png";
 
 export default function Lang() {
   const navigate = useNavigate();
+
   return (
     <Flex
       bgImage={langhome}

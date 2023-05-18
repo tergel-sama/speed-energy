@@ -37,15 +37,16 @@ export default function AboutUs() {
               pr={{ md: "50px" }}
               pb={{ base: "30px" }}
             >
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore
+              Манай компани нь 2014 онд байгуулагдан автомашин сонирхогчдод
+              зориулан дэлхийн алдартай бренд бүтээгдэхүүнүүдийг Монгол Улсын
+              зах зээлд амжилттай нэвтрүүлэн автомашины эрин зуунд дахин
+              давтагдашгүй сонгодог хийц загвар бүхий бүтээгдэхүүнийг зохион
+              бүтээж , оюуны өмчөөр патентжуулан эзэмшиж байна. Өнгөрсөн
+              хугацаанд бидний бүтээгдэхүүн чанар болон стандартын шаардлага
+              хангасан автомашины номер 1 брэнд болж өөрсдийн байр суурийг
+              хэзээний эзэлж чадсандаа бахархалтай байна . Аюулгүй тав тухыг MR
+              , K-MAN ,CONQUER FALCON, MARKMA, BLACK BEAR, KOVE MOTO ,AP RACING
+              ,SPEED RACING, K&N , PELLIOT -оос мэдрээрэй.
             </Text>
           </AnimationOnScroll>
         </Flex>

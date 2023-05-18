@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
-#root{
-    background-color: #111111 !important;
+#root {
+  background-color: #111111 !important;
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .swiper-slide {
@@ -19,4 +19,8 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
 }

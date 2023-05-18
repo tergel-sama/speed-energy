@@ -16,7 +16,12 @@ export default function Home() {
       <Layout>
         <AboutUs />
       </Layout>
-      <Flex pt="200px" justifyContent="center" w="100%">
+      <Flex
+        display={{ base: "none", md: "flex" }}
+        pt="200px"
+        justifyContent="center"
+        w="100%"
+      >
         <Flex alignItems="center">
           <Box marginRight="30px" w="7px" h="75px" bg="#d82424" />
           <AnimationOnScroll animateIn="animate__fadeInDown">
@@ -32,7 +37,9 @@ export default function Home() {
           </AnimationOnScroll>
         </Flex>
       </Flex>
-      <SpecialProd />
+      <Box display={{ base: "none", md: "block" }}>
+        <SpecialProd />
+      </Box>
       <Layout>
         <Partners />
       </Layout>

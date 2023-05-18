@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  SimpleGrid,
-  Stack,
-  Text,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Container, Flex, Stack, Text, Image } from "@chakra-ui/react";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
@@ -15,20 +8,27 @@ import FooterLogo from "../assets/img/logowhitelong.png";
 export default function LargeWithLogoLeft() {
   return (
     <Box py="60px" bg="#111111" color="#ffffff" fontFamily="Oswald">
-      <Container px="120px" maxW="100%" as={Stack} py={10}>
-        <SimpleGrid
-          templateColumns={{ sm: "1fr 1fr", md: "2fr 2fr" }}
-          spacing={8}
-        >
-          <Stack w="100%" spacing={6}>
+      <Container px={{ base: "10px", md: "120px" }} maxW="100%" as={Stack}>
+        <Flex direction={{ base: "column", md: "row" }} spacing={8}>
+          <Flex direction={{ base: "column" }} w="100%" spacing={6}>
             <Box>
               <Image w="640px" alt={"footer logo"} src={FooterLogo} />
             </Box>
-            <Text fontSize={"sm"}>
+            <Text
+              paddingTop="20px"
+              margin={{ base: "auto", md: "unset" }}
+              fontSize={"sm"}
+            >
               © 2023 Speed energy. All rights reserved
             </Text>
-          </Stack>
-          <Stack paddingLeft="200px" fontSize="28px" align={"flex-start"}>
+          </Flex>
+          <Flex
+            paddingTop={{ base: "50px", md: "0px" }}
+            paddingLeft={{ base: "0px", md: "100px" }}
+            direction={{ base: "column" }}
+            fontSize={{ base: "15px", md: "28px" }}
+            align={"flex-start"}
+          >
             <Stack alignItems="center" direction={"row"}>
               <Box marginRight="20px">
                 <BsTelephone />
@@ -50,8 +50,8 @@ export default function LargeWithLogoLeft() {
                 Avenue, Altai building 5th floor
               </Text>
             </Stack>
-          </Stack>
-        </SimpleGrid>
+          </Flex>
+        </Flex>
       </Container>
     </Box>
   );

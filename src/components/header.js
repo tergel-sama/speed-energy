@@ -45,6 +45,8 @@ export default function Header() {
         </Box>
         <Spacer />
         <Image
+          cursor="pointer"
+          onClick={() => navigate("/home")}
           display={{ base: "none", md: "block" }}
           width="350px"
           src={Logowhitelongtext}

@@ -107,7 +107,7 @@ export default function App() {
                 justifyContent="center"
                 flexBasis="50%"
               >
-                <Image src={hoyrzuu} />
+                <Image src={jeep} />
               </Flex>
               <Flex
                 marginRight={{ base: "15px", md: "185px" }}
@@ -124,7 +124,7 @@ export default function App() {
                     fontWeight={900}
                     fontStyle="italic"
                   >
-                    OFFROAD
+                    WILDERNESS
                   </Text>
                   <Text
                     ml={{ base: "10px", md: "30px" }}
@@ -135,6 +135,49 @@ export default function App() {
                     fontStyle="italic"
                   >
                     <AiOutlineDoubleRight id="leftcarrow" />
+                  </Text>
+                </Flex>
+                <Box
+                  w={{ base: "200px", md: "450px" }}
+                  h={{ base: "5px", md: "10px" }}
+                  backgroundImage="linear-gradient(to right, #d82424 19%, rgba(255, 255, 255, 0) 83%)"
+                />
+              </Flex>
+            </Flex>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box bg="#111111" h={{ base: "unset", md: "100vh" }} w="100%">
+            <Flex
+              direction={{ base: "column-reverse", md: "row" }}
+              px="20px"
+              alignItems="center"
+            >
+              <Flex
+                py={{ base: "80px", md: "150px" }}
+                marginRight={{ base: "15px", md: "185px" }}
+                alignItems="center"
+                justifyContent="center"
+                flexBasis="50%"
+              >
+                <Image src={patrol} />
+              </Flex>
+              <Flex
+                marginRight={{ base: "15px", md: "185px" }}
+                justifyContent="center"
+                alignItems="center"
+                direction="column"
+                flexBasis="50%"
+              >
+                <Flex alignItems="center">
+                  <Text
+                    fontSize={{ base: "50px", md: "90px" }}
+                    color="#ffffff"
+                    letterSpacing="2.45px"
+                    fontWeight={900}
+                    fontStyle="italic"
+                  >
+                    DOMINANCE
                   </Text>
                 </Flex>
                 <Box

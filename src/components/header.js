@@ -98,7 +98,34 @@ export default function Header() {
           <DrawerBody>
             <Flex
               cursor="pointer"
-              onClick={() => navigate("/home")}
+              onClick={() => navigate("/moto")}
+              marginBottom="15px"
+              className="group"
+            >
+              <Box
+                marginTop={{ base: "15px", md: "30px" }}
+                marginBottom="10px"
+                marginRight={{ base: "20px", md: "40px" }}
+                marginLeft={{ base: "25px", md: "50px" }}
+                width={{ base: "33px", md: "65px" }}
+                height="4px"
+                backgroundColor="#2a2a2a"
+                className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
+              />
+              <Text
+                fontSize={{ base: "25px", md: "40px" }}
+                lineHeight="normal"
+                fontWeight="bold"
+                color="#2a2a2a"
+                fontFamily="Oswald"
+                className="group-hover:text-[#ffffff] transition group-hover:scale-110 duration-300"
+              >
+                МОТОЦИКЛ
+              </Text>
+            </Flex>
+            <Flex
+              cursor="pointer"
+              onClick={() => navigate("/auto")}
               marginBottom="15px"
               className="group"
             >
@@ -123,7 +150,12 @@ export default function Header() {
                 АВТО ТОНОГЛОЛ
               </Text>
             </Flex>
-            <Flex marginBottom="15px" className="group">
+            <Flex
+              cursor="pointer"
+              onClick={() => navigate("/amar")}
+              marginBottom="15px"
+              className="group"
+            >
               <Box
                 marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
@@ -145,51 +177,12 @@ export default function Header() {
                 АМАРТИЗАТОР
               </Text>
             </Flex>
-            <Flex marginBottom="15px" className="group">
-              <Box
-                marginTop={{ base: "15px", md: "30px" }}
-                marginBottom="10px"
-                marginRight={{ base: "20px", md: "40px" }}
-                marginLeft={{ base: "25px", md: "50px" }}
-                width={{ base: "33px", md: "65px" }}
-                height="4px"
-                backgroundColor="#2a2a2a"
-                className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
-              />
-              <Text
-                fontSize={{ base: "25px", md: "40px" }}
-                lineHeight="normal"
-                fontWeight="bold"
-                color="#2a2a2a"
-                fontFamily="Oswald"
-                className="group-hover:text-[#ffffff] transition group-hover:scale-110 duration-300"
-              >
-                НЭМЭЛТ ГЭРЭЛ
-              </Text>
-            </Flex>
-            <Flex marginBottom="15px" className="group">
-              <Box
-                marginTop={{ base: "15px", md: "30px" }}
-                marginBottom="10px"
-                marginRight={{ base: "20px", md: "40px" }}
-                marginLeft={{ base: "25px", md: "50px" }}
-                width={{ base: "33px", md: "65px" }}
-                height="4px"
-                backgroundColor="#2a2a2a"
-                className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
-              />
-              <Text
-                fontSize={{ base: "25px", md: "40px" }}
-                lineHeight="normal"
-                fontWeight="bold"
-                color="#2a2a2a"
-                fontFamily="Oswald"
-                className="group-hover:text-[#ffffff] transition group-hover:scale-110 duration-300"
-              >
-                АЯЛЛЫН ХЭРЭГСЭЛ
-              </Text>
-            </Flex>
-            <Flex marginBottom="15px" className="group">
+            <Flex
+              cursor="pointer"
+              onClick={() => navigate("/other")}
+              marginBottom="15px"
+              className="group"
+            >
               <Box
                 marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"
@@ -211,51 +204,12 @@ export default function Header() {
                 БУСАД ТОНОГЛОЛ
               </Text>
             </Flex>
-            <Flex marginBottom="15px" className="group">
-              <Box
-                marginTop={{ base: "15px", md: "30px" }}
-                marginBottom="10px"
-                marginRight={{ base: "20px", md: "40px" }}
-                marginLeft={{ base: "25px", md: "50px" }}
-                width={{ base: "33px", md: "65px" }}
-                height="4px"
-                backgroundColor="#2a2a2a"
-                className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
-              />
-              <Text
-                fontSize={{ base: "25px", md: "40px" }}
-                lineHeight="normal"
-                fontWeight="bold"
-                color="#2a2a2a"
-                fontFamily="Oswald"
-                className="group-hover:text-[#ffffff] transition group-hover:scale-110 duration-300"
-              >
-                МОТОЦИКЛ
-              </Text>
-            </Flex>
-            <Flex marginBottom="15px" className="group">
-              <Box
-                marginTop={{ base: "15px", md: "30px" }}
-                marginBottom="10px"
-                marginRight={{ base: "20px", md: "40px" }}
-                marginLeft={{ base: "25px", md: "50px" }}
-                width={{ base: "33px", md: "65px" }}
-                height="4px"
-                backgroundColor="#2a2a2a"
-                className="group-hover:bg-[#ffffff] transform group-hover:translate-x-2 duration-300"
-              />
-              <Text
-                fontSize={{ base: "25px", md: "40px" }}
-                lineHeight="normal"
-                fontWeight="bold"
-                color="#2a2a2a"
-                fontFamily="Oswald"
-                className="group-hover:text-[#ffffff] transition group-hover:scale-110 duration-300"
-              >
-                АЯНЫ ЧИРГҮҮЛ
-              </Text>
-            </Flex>
-            <Flex marginBottom="15px" className="group">
+            <Flex
+              cursor="pointer"
+              onClick={() => navigate("/service")}
+              marginBottom="15px"
+              className="group"
+            >
               <Box
                 marginTop={{ base: "15px", md: "30px" }}
                 marginBottom="10px"

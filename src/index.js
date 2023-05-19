@@ -12,10 +12,14 @@ import "animate.css/animate.min.css";
 //pages
 import Lang from "./pages/lang";
 import Home from "./pages/home";
-import Products from "./pages/products";
+import Moto from "./pages/moto";
 
 //global styles
 import "./global.css";
+import AutoTonog from "./pages/autotonog";
+import OtherTonog from "./pages/othertonog";
+import Amar from "./pages/amar";
+import Service from "./pages/service";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +31,24 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/prod",
-    element: <Products />,
+    path: "/moto",
+    element: <Moto />,
+  },
+  {
+    path: "/auto",
+    element: <AutoTonog />,
+  },
+  {
+    path: "/other",
+    element: <OtherTonog />,
+  },
+  {
+    path: "/amar",
+    element: <Amar />,
+  },
+  {
+    path: "/service",
+    element: <Service />,
   },
 ]);
 

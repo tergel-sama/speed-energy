@@ -11,8 +11,6 @@ import {
   TabList,
 } from "@chakra-ui/react";
 
-import moto from "../assets/img/moto.png";
-
 export default function ProdTabInfo({ data }) {
   return (
     <>
@@ -35,13 +33,15 @@ export default function ProdTabInfo({ data }) {
             >
               {data?.ItemTitle}
             </Text>
-            <Box
-              bg="linear-gradient(to right, #d82424 29%, rgba(255, 255, 255, 0) 83%)"
-              h="4px"
-              w="450px"
-              mb="45px"
-            />
-            <Image src={moto} />
+            {data?.ItemTitle.length === 0 ? null : (
+              <Box
+                bg="linear-gradient(to right, #d82424 29%, rgba(255, 255, 255, 0) 83%)"
+                h="4px"
+                w="450px"
+                mb="45px"
+              />
+            )}
+            <Image m="auto" src={data?.Img} />
           </Flex>
         </Flex>
         <Flex px="30px" flexBasis="70%">
@@ -53,144 +53,45 @@ export default function ProdTabInfo({ data }) {
             variant="unstyled"
           >
             <TabList fontFamily="Oswald">
-              <Tab
-                _selected={{ color: "#ffffff" }}
-                letterSpacing="1.25px"
-                fontWeight="bold"
-                fontSize={{ base: "15px", md: "30px" }}
-              >
-                Хэмжээ
-              </Tab>
-              <Tab
-                _selected={{ color: "#ffffff" }}
-                letterSpacing="1.25px"
-                fontWeight="bold"
-                fontSize={{ base: "15px", md: "30px" }}
-              >
-                Хөдөлгүүр
-              </Tab>
-              <Tab
-                _selected={{ color: "#ffffff" }}
-                letterSpacing="1.25px"
-                fontWeight="bold"
-                fontSize={{ base: "15px", md: "30px" }}
-              >
-                Явах эд анги
-              </Tab>
-              <Tab
-                _selected={{ color: "#ffffff" }}
-                letterSpacing="1.25px"
-                fontWeight="bold"
-                fontSize={{ base: "15px", md: "30px" }}
-              >
-                Тохиргоо
-              </Tab>
+              {data?.ItemTabList?.map((item, index) => (
+                <Tab
+                  key={index}
+                  _selected={{ color: "#ffffff" }}
+                  letterSpacing="1.25px"
+                  fontWeight="bold"
+                  fontSize={{ base: "15px", md: "30px" }}
+                >
+                  {item?.Text}
+                </Tab>
+              ))}
             </TabList>
             <Box h="1px" my={{ base: "16px", md: "32px" }} bgColor="#d82424" />
             <TabPanels>
-              <TabPanel>
-                <Flex my="11px" fontFamily="Oswald">
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    Урт x Жин x Өндөр :
-                  </Text>
-                  <Spacer />
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    2168×805×1265mm
-                  </Text>
-                </Flex>
-                <Flex my="11px" fontFamily="Oswald">
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    Тэнхлэг хоорондын зай :
-                  </Text>
-                  <Spacer />
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    1490mm
-                  </Text>
-                </Flex>
-                <Flex my="11px" fontFamily="Oswald">
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    Суудлын өндөр :
-                  </Text>
-                  <Spacer />
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    960mm (Front)
-                  </Text>
-                </Flex>
-                <Flex my="11px" fontFamily="Oswald">
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    Түлшний багтаамж :
-                  </Text>
-                  <Spacer />
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    6L
-                  </Text>
-                </Flex>
-                <Flex my="11px" fontFamily="Oswald">
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    Нийт жин (Түлшний савгүй) :
-                  </Text>
-                  <Spacer />
-                  <Text
-                    letterSpacing="0.75px"
-                    fontWeight="normal"
-                    color="#ffffff"
-                    fontSize={{ base: "13px", md: "26px" }}
-                  >
-                    98kg
-                  </Text>
-                </Flex>
-              </TabPanel>
-              <TabPanel>
-                <p>two!</p>
-              </TabPanel>
-              <TabPanel>
-                <p>three!</p>
-              </TabPanel>
+              {data?.ItemTabList?.map((item, index) => (
+                <TabPanel key={index}>
+                  {item?.Data?.map((item) => (
+                    <Flex my="11px" fontFamily="Oswald">
+                      <Text
+                        letterSpacing="0.75px"
+                        fontWeight="normal"
+                        color="#ffffff"
+                        fontSize={{ base: "13px", md: "26px" }}
+                      >
+                        {item?.Info}
+                      </Text>
+                      <Spacer />
+                      <Text
+                        letterSpacing="0.75px"
+                        fontWeight="normal"
+                        color="#ffffff"
+                        fontSize={{ base: "13px", md: "26px" }}
+                      >
+                        {item?.Data}
+                      </Text>
+                    </Flex>
+                  ))}
+                </TabPanel>
+              ))}
             </TabPanels>
           </Tabs>
         </Flex>

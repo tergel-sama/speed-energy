@@ -15,8 +15,8 @@ export default function ProdTabInfo({ data }) {
   return (
     <>
       <Flex
-        overflow="hidden"
-        className="transition ease-in-out  hover:scale-105 duration-500"
+        overflow="scroll"
+        className="transition ease-in-out  hover:scale-105 duration-500 removeScroll"
         my="50px"
         rounded="md"
         p={{ base: "10px", md: "50px" }}
@@ -41,10 +41,10 @@ export default function ProdTabInfo({ data }) {
                 mb="45px"
               />
             )}
-            <Image m="auto" src={data?.Img} />
+            <Image minW="450px" m="auto" src={data?.Img} />
           </Flex>
         </Flex>
-        <Flex px="30px" flexBasis="70%">
+        <Flex minW="450px" px="30px" flexBasis="70%">
           <Tabs
             w="100%"
             isFitted

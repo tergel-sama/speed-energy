@@ -15,7 +15,7 @@ export default function ProdTabInfo({ data }) {
   return (
     <>
       <Flex
-        overflow="scroll"
+        overflow="hidden"
         className="transition ease-in-out  hover:scale-105 duration-500"
         my="50px"
         rounded="md"
@@ -84,6 +84,7 @@ export default function ProdTabInfo({ data }) {
                         letterSpacing="0.75px"
                         fontWeight="normal"
                         color="#ffffff"
+                        textAlign="right"
                         fontSize={{ base: "13px", md: "26px" }}
                       >
                         {item?.Data}

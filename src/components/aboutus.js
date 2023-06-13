@@ -1,12 +1,11 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import AboutUsImg from "../assets/img/aboutus.jpg";
 
 export default function AboutUs() {
   return (
     <>
       <Flex direction={{ base: "column", md: "row" }}>
-        <Flex flexBasis="50%" direction="column">
+        <Flex direction="column">
           <Flex alignItems="center">
             <Box
               marginRight="30px"
@@ -48,16 +47,6 @@ export default function AboutUs() {
               , K-MAN ,CONQUER FALCON, MARKMA, BLACK BEAR, KOVE MOTO ,AP RACING
               ,SPEED RACING, K&N , PELLIOT -оос мэдрээрэй.
             </Text>
-          </AnimationOnScroll>
-        </Flex>
-        <Flex
-          flexBasis="50%"
-          px="10px"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <AnimationOnScroll delay={500} animateIn="animate__fadeIn">
-            <Image src={AboutUsImg} />
           </AnimationOnScroll>
         </Flex>
       </Flex>

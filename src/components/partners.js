@@ -1,7 +1,5 @@
 import { Flex, Box, Text, Image, Spacer } from "@chakra-ui/react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { FreeMode, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import Partner1 from "../assets/partners/1.png";
 import Partner2 from "../assets/partners/2.png";
@@ -38,70 +36,48 @@ export default function Partners() {
         </Flex>
       </Flex>
       <Box my="70px" />
-      <Swiper
-        slidesPerView={4}
-        loop={true}
-        autoplay={{
-          delay: 300,
-          disableOnInteraction: false,
-        }}
-        spaceBetween={10}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <Image
-            className="transition ease-in-out  hover:scale-105 duration-500"
-            src={Partner1}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="transition ease-in-out  hover:scale-105 duration-500"
-            src={Partner2}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="transition ease-in-out  hover:scale-105 duration-500"
-            src={Partner3}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="transition ease-in-out  hover:scale-105 duration-500"
-            src={Partner4}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="transition ease-in-out  hover:scale-105 duration-500"
-            src={Partner5}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="transition ease-in-out  hover:scale-105 duration-500"
-            src={Partner6}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="transition ease-in-out  hover:scale-105 duration-500"
-            src={Partner7}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="transition ease-in-out  hover:scale-105 duration-500"
-            src={Partner1}
-          />
-        </SwiperSlide>
-      </Swiper>
+      <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
+        <Image
+          p="20px"
+          className="transition ease-in-out  hover:scale-105 duration-500"
+          src={Partner1}
+        />
+        <Image
+          p="20px"
+          className="transition ease-in-out  hover:scale-105 duration-500"
+          src={Partner2}
+        />
+        <Image
+          p="20px"
+          className="transition ease-in-out  hover:scale-105 duration-500"
+          src={Partner3}
+        />
+        <Image
+          p="20px"
+          className="transition ease-in-out  hover:scale-105 duration-500"
+          src={Partner4}
+        />
+        <Image
+          p="20px"
+          className="transition ease-in-out  hover:scale-105 duration-500"
+          src={Partner5}
+        />
+        <Image
+          p="20px"
+          className="transition ease-in-out  hover:scale-105 duration-500"
+          src={Partner6}
+        />
+        <Image
+          p="20px"
+          className="transition ease-in-out  hover:scale-105 duration-500"
+          src={Partner7}
+        />
+        <Image
+          p="20px"
+          className="transition ease-in-out  hover:scale-105 duration-500"
+          src={Partner1}
+        />
+      </Flex>
     </Box>
   );
 }

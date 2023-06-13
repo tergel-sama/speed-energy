@@ -18,6 +18,9 @@ import ProdTabInfo from "../components/prodtabinfo";
 import hoidguper from "../assets/autotonog/hoidguper.png";
 import urdguper from "../assets/autotonog/urdguper.png";
 import gishguur from "../assets/autotonog/gishguur.png";
+import achaa from "../assets/autotonog/achaa.png";
+import eleghamgaalalt from "../assets/autotonog/eleghamgaalalt.png";
+import agaarhooloi from "../assets/autotonog/agaarhooloi.png";
 
 import patrolhoidguper from "../assets/autotonog/patrolhoidguper.png";
 import patrolurdguper from "../assets/autotonog/patrolurdguper.png";
@@ -95,6 +98,91 @@ const tabList = [
               {
                 Info: "Жин :",
                 Data: "9 кг X 2",
+              },
+              {
+                Info: "Өнгө :",
+                Data: "Хар",
+              },
+              {
+                Info: "Бүрдэл хэсэг :",
+                Data: "3",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        ItemTitle: "",
+        Img: achaa,
+        ItemTabList: [
+          {
+            Text: "Ачаа",
+            Data: [
+              {
+                Info: "Материал :",
+                Data: "Төмөр болон хөнгөн цагаан",
+              },
+              {
+                Info: "Жин :",
+                Data: "25 кг",
+              },
+              {
+                Info: "Өнгө :",
+                Data: "Матт хар",
+              },
+              {
+                Info: "Бүрдэл хэсэг :",
+                Data: "9",
+              },
+              {
+                Info: "Даац :",
+                Data: "100-150 кг",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        ItemTitle: "",
+        Img: eleghamgaalalt,
+        ItemTabList: [
+          {
+            Text: "Элэгний хамгаалалт",
+            Data: [
+              {
+                Info: "Материал :",
+                Data: "Төмөр",
+              },
+              {
+                Info: "Жин :",
+                Data: "28 кг",
+              },
+              {
+                Info: "Өнгө :",
+                Data: "Хар болон Саарал",
+              },
+              {
+                Info: "Бүрдэл хэсэг :",
+                Data: "3",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        ItemTitle: "",
+        Img: agaarhooloi,
+        ItemTabList: [
+          {
+            Text: "Агаарын хоолой",
+            Data: [
+              {
+                Info: "Материал :",
+                Data: "Хуванцар",
+              },
+              {
+                Info: "Жин :",
+                Data: "800 гр",
               },
               {
                 Info: "Өнгө :",
@@ -189,6 +277,37 @@ const tabList = [
               {
                 Info: "Бүрдэл хэсэг :",
                 Data: "3",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        ItemTitle: "",
+        Img: achaa,
+        ItemTabList: [
+          {
+            Text: "Ачаа",
+            Data: [
+              {
+                Info: "Материал :",
+                Data: "Төмөр болон хөнгөн цагаан",
+              },
+              {
+                Info: "Жин :",
+                Data: "25 кг",
+              },
+              {
+                Info: "Өнгө :",
+                Data: "Матт хар",
+              },
+              {
+                Info: "Бүрдэл хэсэг :",
+                Data: "9",
+              },
+              {
+                Info: "Даац :",
+                Data: "100-150 кг",
               },
             ],
           },

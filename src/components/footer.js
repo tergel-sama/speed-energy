@@ -46,8 +46,7 @@ export default function LargeWithLogoLeft() {
                 <IoLocationOutline />
               </Box>
               <Text>
-                Mongolia, Ulaanbaatar City, Sukhbaatar district, Chinggis
-                Avenue, Altai building 5th floor
+                Mongolia, Ulaanbaatar City, Khan-Uul district, Yarmag bridge
               </Text>
             </Stack>
           </Flex>
